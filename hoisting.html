@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Lexical scope
+      const price = 300;
+      function getprice(){
+          console.log("The old price is :"price);
+          var price = 500;
+          console.log("The new price is:"price)
+
+      }
+    </script>
+  </body>
+</html>
