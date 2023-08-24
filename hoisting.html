@@ -7,15 +7,26 @@
   </head>
   <body>
     <script>
-      // Lexical scope
-      const price = 300;
-      function getprice(){
-          console.log("The old price is :"price);
-          var price = 500;
-          console.log("The new price is:"price)
-        var a = 10
+            // Lexical scope
+            const price = 300;
+            function getprice(){
+                console.log("The old price is :"price);
+                var price = 500;
+                console.log("The new price is:"price)
+              var a = 10
 
-      }
+            }
+      const avengers = [
+        "Hulk",
+        "Iron man",
+        "Black widow",
+        "Captain america",
+        "Spider man",
+        "Thor",
+      ];
+      const count = avengers.filter((n)=>n.length>=10);
+      console.log(count)
     </script>
   </body>
 </html>
+`
