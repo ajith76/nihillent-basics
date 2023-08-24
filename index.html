@@ -19,9 +19,18 @@
         width: 350px;
         border-radius: 20px;
         aspect-ratio: 1/1;
+        transition: all 1s;
         object-fit: fill;
       }
-
+      img:hover {
+        background: black;
+        transform: rotate(360deg);
+        cursor: pointer;
+        clip-path: circle(50% at 50% 50%);
+      }
+      img:active {
+        transform: scale(1.5);
+      }
       p,
       h1 {
         line-height: 30px;
