@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background: black;
+    }
+  </style>
+  <body>
+    <h1>Time out</h1>
+    <button onclick="color()">▶️ START</button>
+    <button onclick="stop()">⏹️ STOP</button>
+    <button onclick="pause()">⏸️PAUSE</button>
+    <script>
+      //   console.log("Timer Started");
+      //   window.setTimeout(() => {
+      //     console.log("Hi da dae");
+      //   }, 2000);
+      //   const charanIntv = window.setInterval(() => {
+      //     console.log("Hi da Tambi");
+      //   }, 2000);
+      //   window.setTimeout(() => {
+      //     window.clearInterval(charanIntv);
+      //   }, 6000);
+      const colors = ["orange", "purple", "crimson", "teal", "plum"];
+      let colorIntv;
+      function color() {
+        let index = 0;
+        colorIntv = setInterval(() => {
+          if (index >= colors.length) {
+            index = 0;
+          }
+          document.body.style.background = colors[index];
+          index++;
+        }, 1000);
+      }
+      function stop() {
+        index = 0;
+        clearInterval(colorIntv);
+      }
+      function pause() {
+        clearInterval(colorIntv);
+      }
+      //   setInterval((colors) => {
+      //    document.array.style.background
+      //   });
+    </script>
+  </body>
+</html>
