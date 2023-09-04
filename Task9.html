@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        background-color: blueviolet;
+        justify-content: center;
+
+        text-align: center;
+        place-content: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      h1 {
+        color: white;
+        padding: 10px;
+      }
+
+      .container h1::before {
+        content: "\201C";
+        color: hwb(0 100% 0% / 0.37);
+        font-size: 60px;
+        position: absolute;
+        top: 10px;
+
+        left: 40px;
+        /* color: white; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        I had seriously high expectations for Josh's CSS course.And
+        honestly?It's exceeded them.
+      </h1>
+    </div>
+
+    <h1></h1>
+  </body>
+</html>
