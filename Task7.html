@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   <style>
+    body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar img {
+  transform: translateX(-900px);
+}
+
+.arrow img {
+  transform: translateX(700px) translateY(100px);
+}
+
+.navbar {
+  display: flex;
+  padding: 25px;
+  display: flex;
+  color: white;
+  gap: 10px;
+  margin: 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar p {
+  padding: 10px;
+}
+
+.navbar p:hover {
+  background-color: #fffffd;
+  color: black;
+  padding: 10px;
+  border-radius: 1000px;
+}
+
+header {
+  background-image: url("image-header.jpg");
+  background-size: cover;
+
+  height: 100vh;
+  min-width: 100vh;
+  background-position: bottom;
+}
+
+header h1 {
+  text-align: center;
+  transform: translateY(20px);
+  color: white;
+}
+
+section {
+  margin: 0;
+  gap: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(700px, 2fr));
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.grid1 a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 4px solid #fff1bf;
+  display: block;
+  width: max-content;
+}
+
+.grid4 a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 4px solid #ffdbd4;
+  display: block;
+  width: max-content;
+}
+
+a h5 {
+  transform: translateY(6px);
+  margin: 0;
+}
+
+.grid1 {
+  padding: 5rem;
+  background-color: #fffbf8;
+}
+
+.grid2 {
+  background-image: url("image-transform.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid3 {
+  background-image: url("image-stand-out.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grid4 {
+  padding: 5rem;
+  background-color: #fffbf8;
+}
+
+.grid5 {
+  background-image: url("image-graphic-design.jpg");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.grid6 {
+  background-image: url("image-photography.jpg");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.client {
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+  color: #adadad;
+}
+.testinominals {
+  display: flex;
+
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 30px;
+  justify-content: center;
+}
+
+.test1 {
+  width: 300px;
+  padding: 20px;
+}
+
+.test1 p {
+  color: #56585b;
+  font-weight: 500;
+}
+
+.test1 img {
+  margin-bottom: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.products {
+  display: flex;
+}
+
+.prod-image {
+  flex: 1;
+  height: 300px; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+}
+
+.prod1 {
+  background-image: url("image-gallery-milkbottles.jpg");
+}
+
+.prod2 {
+  background-image: url("image-gallery-orange.jpg");
+}
+
+.prod3 {
+  background-image: url("image-gallery-cone.jpg");
+}
+
+.prod4 {
+  background-image: url("image-gallery-sugarcubes.jpg");
+}
+
+.footer {
+  margin: 0;
+  min-height: 40vh;
+  background-color: #90d4c5;
+}
+
+.footer h3 {
+  padding: 40px;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.foot {
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  margin-top: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
+  transform: translateY(30px);
+}
+   </style>
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="logo.svg" />
+        <p>About</p>
+        <p>Sevices</p>
+        <p>Projects</p>
+        <p>Contact</p>
+      </div>
+      <h1>WE ARE CREATIVES</h1>
+      <div class="arrow">
+        <img src="icon-arrow-down.svg" />
+      </div>
+    </header>
+
+    <section>
+      <div class="grid1">
+        <h1>Transform your brand</h1>
+        <p>
+          we are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+        </p>
+        <a href="LEARN MORE"><h5>LEARN MORE</h5></a>
+      </div>
+
+      <div class="grid2"></div>
+
+      <div class="grid3"></div>
+
+      <div class="grid4">
+        <h1>Stand out to the right audience</h1>
+        <p>
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we'll build and extend
+          your brand in digital places.
+        </p>
+        <a href="LEARN MORE"><h5>LEARN MORE</h5></a>
+      </div>
+
+      <div class="grid5">
+        <h1>Graphic Design</h1>
+        <p>
+          Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential client's attention.
+        </p>
+      </div>
+
+      <div class="grid6">
+        <h1>Photography</h1>
+        <p>
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </div>
+    </section>
+
+    <div class="client">
+      <h1>CLIENT TESTIMONIALS</h1>
+    </div>
+
+    <div class="testinominals">
+      <div class="test1">
+        <img src="image-emily.jpg" />
+        <p>
+          we put our trust in Sunnyside and they delivered,making sure our needs
+          wre met and deadlines were always hit.
+        </p>
+        <h4>Emiliy R.</h4>
+        <p>Marketing Director</p>
+      </div>
+
+      <div class="test1">
+        <img src="image-thomas.jpg" />
+        <p>
+          Sunnyside's enthusiasm coupled with their keen interest in our brand’s
+          success made it a satisfying and enjoyable experience.
+        </p>
+        <h4>Thomas S.</h4>
+        <p>Chief Operating officer</p>
+      </div>
+
+      <div class="test1">
+        <img src="image-jennie.jpg" />
+        <p>
+          Incredible end result! Our sales increased over 400% when we worked
+          with Sunnyside. Highly recommended!
+        </p>
+        <h4>Jennie F.</h4>
+        <p>Business Owner</p>
+      </div>
+    </div>
+
+    <div class="products">
+      <div class="prod-image prod1"></div>
+      <div class="prod-image prod2"></div>
+      <div class="prod-image prod3"></div>
+      <div class="prod-image prod4"></div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <h3>Sunnyside</h3>
+      </div>
+      <div class="foot">
+        <p>About</p>
+        <div>
+          <p>Services</p>
+        </div>
+
+        <div>
+          <p>Projects</p>
+        </div>
+      </div>
+
+      <div class="icons">
+        <div><img src="icon-facebook.svg" /></div>
+        <div><img src="icon-instagram.svg" /></div>
+        <div><img src="icon-twitter.svg" /></div>
+        <div><img src="icon-pinterest.svg" /></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        font-family: sans-serif;
+        background-color: #0a0c1b;
+      }
+      .box {
+        background: #1c1938;
+
+        width: 1000px;
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        border-radius: 10px;
+      }
+      .heading {
+        color: #feffff;
+      }
+      .boxcontent {
+        color: #9795ad;
+        font-family: inherit;
+        line-height: 1.3;
+        padding: 10px;
+      }
+      .innerbox {
+        color: #feffff;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .img {
+        height: 200px;
+
+        background-image: url(image-header-desktop.jpg);
+        border-radius: 0 10px 10px 0;
+        background-color: #9d54c9;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .insights {
+        color: purple;
+      }
+      .containerbox1 {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 30px;
+      }
+      .iinbox {
+        color: #84829a;
+        font-size: 12px;
+        font-weight: 200;
+        font-family: sans-serif;
+        margin-top: 0;
+      }
+
+      .maincontainer {
+        padding: 48px;
+        justify-content: center;
+      }
+
+      @media (min-width: 450px) {
+        .box {
+          width: 600px;
+
+          flex-direction: column-reverse;
+        }
+
+        .img {
+          height: 200px;
+
+          background-image: url(image-header-desktop.jpg);
+          border-radius: 0 10px 10px 0;
+          background-color: #9d54c9;
+          background-blend-mode: multiply;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .containerbox1 {
+          flex-direction: row;
+
+          align-items: flex-end;
+        }
+      }
+
+      @media (min-width: 600px) {
+        .box {
+          width: 1000px;
+
+          flex-direction: row;
+        }
+
+        .img {
+          width: 130%;
+          height: 100%;
+        }
+
+        .containerbox1 {
+          flex-direction: row;
+
+          align-items: flex-end;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="maincontainer">
+        <div>
+          <h1 class="heading">
+            Get <span class="insights">insights</span> that help your business
+            grow.
+          </h1>
+          <p class="boxcontent">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </div>
+        <div class="containerbox1">
+          <div>
+            <p class="innerbox">10k+</p>
+            <p class="iinbox">COMPANIES</p>
+          </div>
+          <div>
+            <p class="innerbox">314</p>
+            <p class="iinbox">TEMPLETES</p>
+          </div>
+          <div>
+            <p class="innerbox">12M+</p>
+            <p class="iinbox">QUERIES</p>
+          </div>
+        </div>
+      </div>
+      <div class="img" alt=""></div>
+    </div>
+  </body>
+</html>

@@ -1,217 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background-color: #f6f5fa;
+        font-family: sans-serif;
 
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
+        margin: 0px;
+      }
 
-		<title>Frontend Mentor | Sunnyside agency landing page</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-      <script src="./app.js" defer></script>
-	</head>
-	<body>
-      <div id="backdrop"></div>
-		<div id="parent">
-			<header class="HeaderBox">
-				<div class="HeaderTop">
-					<div class="ImageLogo">
-						<a href=""><img src="./images/logo.svg" alt="" /></a>
-					</div>
-					<nav>
-                  <div class="Menu">
-						<div class="MenuBar">
-							<div><p>About</p></div>
-							<div><p>Services</p></div>
-							<div><p>Projects</p></div>
-							<div class="Contact"><p>CONTACT</p></div>
-						</div>
-					</div>
-					<div class="MenuBtn">
-						<img src="./images/icon-hamburger.svg" alt="" class="MenuBtnIcon" />
-                  <img src="./images/icon-close.svg" alt="" class="MenuBtnIcon hidden">
-					</div>
-               </nav>
-				</div>
-				<h1 class="HeaderText"><p>WE ARE CREATIVES</p></h1>
-				<div class="ArrowDown">
-					<img src="./images/icon-arrow-down.svg" alt="" />
-				</div>
-			</header>
-			<main>
-            <div class="TransformContent">
-				<div class="ImageTransform">
-					<img
-						src="./images/mobile/image-transform.jpg"
-						width="100%" height="100%"
-						alt=""
-					/>
-				</div>
-				<div class="ContentBox">
-					<p class="TitleText">Transform your brand</p>
-					<p class="TextContent">
-						We are a full-service creative agency specializing in helping
-						brands grow fast. Engage your clients through compelling
-						visuals that do most of the marketing for you.
-					</p>
-					<p class="BigText">LEARN MORE <br/> <div class="TextStyle"></div></p>
-				</div>
-			</div>
-			<div class="StandoutContent">
-				<div class="ImageStandout">
-					<img
-						src="./images/mobile/image-stand-out.jpg"
-						width="100%" height="100%"
-						alt=""
-					/>
-				</div>
-				<div class="ContentBox">
-					<p class="TitleText">Stand out to the right audience</p>
-					<p class="TextContent">
-						Using a collaborative formula of designers, researchers,
-						photographers, videographers, and copywriters, we’ll build and
-						extend your brand in digital places.
-					</p>
-					<p class="BigText">LEARN MORE <br/> <div style="border-color:#ffd9d2" class="TextStyle"></div></p>
-				</div>
-			</div>
-			<div class="FruitBox">
-				<div class="FruitBox1">
-					<div class="FruitBoxInner">
-						<div class="FruitBoxTitle"><p>Graphic Design</p></div>
-						<div>
-							<p>
-								Great design makes you memorable. We deliver artwork
-								that underscores your brand message and captures
-								potential clients’ attention.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="FruitBox2">
-					<div class="FruitBoxInner">
-						<div class="FruitBoxTitle"><p>photography</p></div>
-						<div>
-							<p>
-								Increase your credibility by getting the most stunning,
-								high-quality photos that improve your business image.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="Testimony">
-				<div class="TestimonyTitle"><p>CLIENT TESTIMONIALS</p></div><br/>
-				<div class="TestimonyContent">
-               <div class="TestimonyBox">
-					<div class="PhotoBox">
-						<img src="./images/image-emily.jpg" alt="" width="100%" />
-					</div>
-					<div class="PhotoBoxText">
-						<p>
-							We put our trust in Sunnyside and they delivered, making
-							sure our needs were met and deadlines were always hit.
-						</p>
-					</div>
-					<div class="Name">
-						<p>Emily R.</p>
-					</div>
-					<div class="occupation"><p>marketing Director</p></div>
-				</div>
-				<div class="TestimonyBox">
-					<div class="PhotoBox">
-						<img src="./images/image-thomas.jpg" alt="" width="100%" />
-					</div>
-					<div class="PhotoBoxText">
-						<p>
-							Sunnyside’s enthusiasm coupled with their keen interest in
-							our brand’s success made it a satisfying and enjoyable
-							experience.
-						</p>
-					</div>
-					<div class="Name">
-						<p>Thomas S.</p>
-					</div>
-					<div class="occupation"><p>Chief Operating Offficer</p></div>
-				</div>
-				<div class="TestimonyBox">
-					<div class="PhotoBox">
-						<img src="./images/image-jennie.jpg" alt="" width="100%" />
-					</div>
-					<div class="PhotoBoxText">
-						<p>
-							Incredible end result! Our sales increased over 400% when
-							we worked with Sunnyside. Highly recommended!
-						</p>
-					</div>
-					<div class="Name">
-						<p>Jennie F.</p>
-					</div>
-					<div class="occupation"><p>Business Owner</p></div>
-				</div>
-            </div>
-			</div>
-			<div class="FooterImageBox">
-				<div class="ImageBox" id="image_box1">
-					<div >
-						<img
-							src="./images/mobile/image-gallery-milkbottles.jpg"
-							alt=""
-							width="100%" height="100%"
-						/>
-					</div>
-					<div>
-						<img
-							src="./images/mobile/image-gallery-orange.jpg"
-							alt=""
-							width="100%" height="100%"
-						/>
-					</div>
-				</div>
-				<div class="ImageBox" id="image_box2">
-					<div>
-						<img
-							src="./images/mobile/image-gallery-cone.jpg"
-							alt=""
-							width="100%" height="100%"
-						/>
-					</div>
-					<div>
-						<img
-							src="./images/mobile/image-gallery-sugar-cubes.jpg"
-							width="100%" height="100%"
-							alt=""
-						/>
-					</div>
-				</div>
-			</div>
-         </main>
-			<div class="Footer">
-				<div class="FooterBigText"><p><a href="">sunnyside</p></a></div>
-				<div class="FooterContent">
-					<div><p>About</p></div>
-					<div><p>Services</p></div>
-					<div><p>Projects</p></div>
-				</div>
-				<div class="FooterIcon">
-					<div><img src="./images/icon-facebook.svg" alt="" /></div>
-					<div><img src="./images/icon-instagram.svg" alt="" /></div>
-					<div><img src="./images/icon-twitter.svg" alt="" /></div>
-					<div><img src="./images/icon-pinterest.svg" alt="" /></div>
-				</div>
-			</div>
-		</div>
-		<div class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="https://github.com/babboe1">babboeCodes</a>.
-		</div>
-	</body>
-   
+      .main {
+        height: 350px;
+        display: flex;
+
+        justify-content: space-between;
+        gap: 25px;
+        border-radius: 25px;
+      }
+
+      ul.tick {
+        list-style-type: none;
+        padding-left: 0;
+        border-radius: 15px;
+      }
+
+      ul.tick li::before {
+        content: "\2713";
+        margin-right: 8px;
+        /* color: black; */
+      }
+
+      .Intro,
+      .Base,
+      .Enterprise {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 25px;
+      }
+
+      .Pro {
+        background-color: #181059;
+        padding: 20px;
+        color: white;
+        border-radius: 25px;
+        transform: translateY(-30px);
+      }
+
+      ul.tick3 {
+        list-style-type: none;
+        padding-left: 0;
+        border-radius: 15px;
+      }
+
+      ul.tick3 li::before {
+        content: "\2713";
+        margin-right: 8px;
+        /* color: white; */
+      }
+
+      span {
+        font-size: medium;
+        font-weight: 100;
+      }
+
+      .btn1,
+      .btn2,
+      .btn4 {
+        width: 100%;
+        padding: 10px;
+        background-color: #f8f4ff;
+        color: #8545ff;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      .btn3 {
+        width: 100%;
+        padding: 10px;
+        background-color: #8545ff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      .blur {
+        color: rgba(0, 0, 0, 0.297);
+      }
+
+      .blur1 {
+        color: rgba(255, 255, 255, 0.297);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="Intro">
+        <h1>Intro</h1>
+        <ul class="tick">
+          <li>Upload video up to 720p Resolution</li>
+          <div class="blur">
+            <li>Attachement & Post Scheduling</li>
+            <li>Set your rates</li>
+            <li>Exclusive Deals</li>
+            <li>Advanced Statistics</li>
+          </div>
+        </ul>
+
+        <h1><span>$</span>123<span>/month</span></h1>
+
+        <button class="btn1"><b>choose</b></button>
+      </div>
+      <div class="Base">
+        <h1>Base</h1>
+        <ul class="tick">
+          <li>Upload video up to 720p Resolution</li>
+          <li>Attachement & Post Scheduling</li>
+          <div class="blur">
+            <li>Set your rates</li>
+            <li>Exclusive Deals</li>
+            <li>Advanced Statistics</li>
+          </div>
+        </ul>
+
+        <h1><span>$</span>234<span>/month</span></h1>
+
+        <button class="btn2"><b>choose</b></button>
+      </div>
+
+      <div class="Pro">
+        <h1>Pro</h1>
+        <ul class="tick3">
+          <li>Upload video up to 720p Resolution</li>
+          <li>Attachement & Post Scheduling</li>
+          <li>Set your rates</li>
+          <li>Exclusive Deals</li>
+          <div class="blur1">
+            <li>Advanced Statistics</li>
+          </div>
+        </ul>
+
+        <h1><span>$</span>456<span>/month</span></h1>
+
+        <button class="btn3"><b>Try 1 month</b></button>
+      </div>
+
+      <div class="Enterprise">
+        <h1>Enterprise</h1>
+        <ul class="tick">
+          <li>Upload video up to 720p Resolution</li>
+          <li>Attachement & Post Scheduling</li>
+          <li>Set your rates</li>
+          <li>Exclusive Deals</li>
+          <li>Advanced Statistics</li>
+        </ul>
+
+        <h1><span>$</span>678<span>/month</span></h1>
+
+        <button class="btn4"><b>choose</b></button>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        min-height: 100vh;
+        display: grid;
+
+        place-content: center;
+
+        background-color: #f5f5f5;
+        margin: 0;
+        font-family: sans-serif;
+        padding: 220px;
+      }
+
+      .container {
+        display: flex;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .image-block {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-block img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 15px 0 0 15px;
+      }
+
+      .content-block {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .content-block h1 {
+        color: rgb(90 99 111);
+      }
+
+      .author {
+        display: flex;
+        align-items: center;
+      }
+
+      .image2 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+      }
+
+      .image2 img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .footer {
+        flex: 1;
+      }
+
+      .icon {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        padding-right: 40px;
+      }
+
+      span {
+        color: rgb(90 99 111);
+      }
+
+      p {
+        color: rgb(134 141 149);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-block">
+        <img src="drawers.jpg" alt="Image" />
+      </div>
+      <div class="content-block">
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I've got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="author">
+          <div class="image2">
+            <img src="avatar-michelle.jpg" alt="Author Image" />
+          </div>
+
+          <div class="footer">
+            <p>
+              <b><span>Michelle Aplleton</span></b>
+            </p>
+            <p>28 Jun 2020</p>
+          </div>
+          <div class="icon">
+            <img src="icon-share.svg" alt="Share Icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
