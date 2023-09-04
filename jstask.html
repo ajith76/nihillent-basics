@@ -6,15 +6,21 @@
     <title>Document</title>
   </head>
   <style>
-    body {
+    /* body {
       background: black;
+    } */
+    .slide {
+      height: 25rem;
+      width: 100%;
+      object-fit: cover;
     }
   </style>
   <body>
-    <h1>Time out</h1>
+    <img src="" class="slide" />
+    <!-- <h1>Time out</h1>
     <button onclick="color()">▶️ START</button>
-    <button onclick="stop()">⏹️ STOP</button>
-    <button onclick="pause()">⏸️PAUSE</button>
+    <button onclick="stop()">⏹️ STOP</button> -->
+    <!-- <button onclick="pause()">⏸️PAUSE</button> -->
     <script>
       //   console.log("Timer Started");
       //   window.setTimeout(() => {
@@ -26,28 +32,47 @@
       //   window.setTimeout(() => {
       //     window.clearInterval(charanIntv);
       //   }, 6000);
-      const colors = ["orange", "purple", "crimson", "teal", "plum"];
-      let colorIntv;
-      function color() {
-        let index = 0;
-        colorIntv = setInterval(() => {
-          if (index >= colors.length) {
-            index = 0;
-          }
-          document.body.style.background = colors[index];
+      //   const colors = ["orange", "purple", "crimson", "teal", "plum"];
+      //   let colorIntv;
+      //   function color() {
+      //     let index = 0;
+      //     colorIntv = setInterval(() => {
+      //       if (index >= colors.length) {
+      //         index = 0;
+      //       }
+      //       document.body.style.background = colors[index];
+      //       index++;
+      //     }, 1000);
+      //   }
+      //   function stop() {
+      //     index = 0;
+      //     clearInterval(colorIntv);
+      //   }
+      //   function pause() {
+      //     clearInterval(colorIntv);
+      //   }
+      //   //   setInterval((colors) => {
+      //   //    document.array.style.background
+      //   //   });
+      const images = [
+        "/neom-gkfSdzieIJc-Unsplash.jpg",
+        "/hiki-app-A9rQeI2AdR4-unsplash.jpg",
+        "/hiki-app-aM-BRQtrng8-unsplash.jpg",
+        "/hiki-app-YAVHheaHGi0-unsplash.jpg",
+      ];
+      let index = 0;
+      function slideshow() {
+        setInterval(() => {
+          document.querySelector(".slide").src = images[index];
           index++;
         }, 1000);
       }
-      function stop() {
-        index = 0;
-        clearInterval(colorIntv);
-      }
-      function pause() {
-        clearInterval(colorIntv);
-      }
-      //   setInterval((colors) => {
-      //    document.array.style.background
-      //   });
+      // let index = 0;
+      // setInterval(() => {
+
+      //   document.querySelector(".slide").src = images[index];
+      //   index++;
+      // }, 1000);
     </script>
   </body>
 </html>

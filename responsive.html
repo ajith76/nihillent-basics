@@ -6,44 +6,70 @@
     <title>Document</title>
   </head>
   <style>
-    /* body {
-      background-image: url("orange.jpeg");
-      background-repeat: no-repeat;
-      background-position: fill;
-    } */
+    body {
+      margin: 0;
+    }
     .header {
-      align-items: center;
-      background-image: url("orange.jpeg");
+      display: flex;
+      justify-content: space-between;
+      /* align-items: center; */
+      margin: 10px;
+    }
+    .backimg {
+      background-image: url("image-header.jpg");
+      height: 300px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      color: white;
     }
     .ryt {
+      gap: 10px;
       display: flex;
-      justify-content: flex-end;
-      justify-content: space-between;
+      align-items: center;
+      text-transform: capitalize;
     }
     .lft {
       display: flex;
+      gap: 10px;
     }
     h1 {
       text-align: center;
     }
     .pillformat {
+      height: 40px;
       border-radius: 1000px;
+      background-image: black;
+    }
+    .gridfunc {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: stretch;
+      justify-content: space-between;
+    }
+    .griddesign1 {
+      padding: 100px;
+    }
+    .griddesign4 {
+      padding: 100px;
     }
   </style>
   <body>
-    <section class="header">
-      <div class="lft">
-        <h3>sunnyside</h3>
-      </div>
+    <div class="backimg">
+      <section class="header">
+        <div class="lft">
+          <h3>sunnyside</h3>
+        </div>
 
-      <div class="ryt">
-        <p>About</p>
-        <p>service</p>
-        <p>Projects</p>
-        <button class="pillformat">CONTACT</button>
-      </div>
+        <div class="ryt">
+          <p>About</p>
+          <p>service</p>
+          <p>Projects</p>
+          <button class="pillformat">CONTACT</button>
+        </div>
+      </section>
       <h1>WE ARE CREATIVES</h1>
-    </section>
+    </div>
 
     <section class="gridfunc">
       <div class="griddesign1">
@@ -56,9 +82,13 @@
         <h4>LEARN MORE</h4>
       </div>
       <div class="griddesign2">
-        <img src="" alt="" />
+        <img src="image-transform.jpg" alt="" />
       </div>
       <div class="griddesign3">
+        <img src="image-stand-out.jpg" alt="" />
+      </div>
+
+      <div class="griddesign4">
         <h3>Transform your brand</h3>
         <p>
           we are a full service creative agency specializing helping brands grow
@@ -67,8 +97,12 @@
         </p>
         <h4>LEARN MORE</h4>
       </div>
-      <div class="griddesign2">
-        <img src="" alt="" />
+
+      <div class="griddesign5">
+        <img src="image-stand-out.jpg" alt="" />
+      </div>
+      <div class="griddesign6">
+        <img src="image-stand-out.jpg" alt="" />
       </div>
     </section>
   </body>
