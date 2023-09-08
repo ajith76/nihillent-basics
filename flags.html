@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+
+        padding: 2rem;
+        font-family: Roboto, "san-serif";
+        background: whitesmoke;
+      }
+
+      .flag-container {
+        background: white;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      .flag-details-container {
+        padding: 1.5rem;
+      }
+
+      .flag-details-container span {
+        font-weight: bold;
+      }
+
+      .flag-details-container p {
+        font-size: 1.2rem;
+      }
+
+      .flag-container img {
+        height: 12rem;
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //   countriesInfo.forEach((country) => {
+      //     document.body.innerHTML += `<section class="flag-container">
+      //   <img
+      //     src=${country.flag}
+      //     alt=${country.name}
+      //   />
+
+      //   <div class="flag-details-container">
+      //     <h2 class="country-name">${country.name}</h2>
+
+      //     <p><span>Population:</span> ${country.population}</p>
+      //     <p><span>Region:</span> ${country.region}</p>
+      //     <p><span>Capital:</span> ${country.capital}</p>
+      //   </div>
+      // </section> `;
+      //   });
+      fetch("https://restcountries.com/v3.1/all")
+        .then((res) => res.json())
+        .then((data) => {
+          //   console.log(data.map((mn) => mn.name.common));
+
+          data
+            // .filter((n) => n.population > 1_00_00_000)
+            .sort((a, b) => b.population - a.population)
+            //   .map((n,c) =>` ${c+1}, ${n.name.common} - ${n.population}`)
+            // .slice(0, 10)
+            //   .join("\n")
+            .forEach(({ flags, name, population, region, capital }) => {
+              document.body.innerHTML += `<section class="flag-container">
+        <img
+          src=${flags.svg}
+          alt=${name.common}
+        />
+
+        <div class="flag-details-container">
+          <h2 class="country-name">${name.common}</h2>
+
+          <p><span>Population:</span> ${population}</p>
+          <p><span>Region:</span> ${region}</p>
+          <p><span>Capital:</span> ${capital}</p>
+        </div>
+      </section> `;
+            });
+        });
+    </script>
+  </body>
+</html>

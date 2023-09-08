@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: auto 0;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      align-items: center;
+      gap: 10px;
+      height: ;
+      width: ;
+      border-radius: 10px;
+      background-color: rgb(25, 186, 127);
+    }
+
+    /* background-color: rgb(226, 219, 22); */
+
+    .innercontaier {
+    }
+
+    img {
+      border-radius: 50%;
+      height: 50px;
+      aspect-ratio: 1/1;
+    }
+  </style>
+  <body>
+    <script>
+      fetch("https://64f6f4189d7754084952d85e.mockapi.io/users").then((res) =>
+        res.json().then((data) => {
+          data.forEach(({ avatar, name, createAT }) => {
+            document.body.innerHTML += `<section class="container">
+        <div class="innercontainer">
+          <img src="${avatar}" alt="" />
+          </div>
+          <div class="content">
+          <h2>${name}</h2>
+          <p>${createAT}</p>
+          <button>delete</button>
+        </div>
+      </section>`;
+          });
+        })
+      );
+    </script>
+  </body>
+</html>

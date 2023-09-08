@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      
+    </ul>
+    <script>
+      fetch("https://restcountries.com/v3.1/all")
+        .then((res) => res.json())
+        .then((data) => {
+          //   console.log(data.map((mn) => mn.name.common));
+          console.log(
+            data
+              .filter((n) => n.population > 1_00_00_000)
+              .sort((a, b) => b.population - a.population)
+            //   .map((n,c) =>` ${c+1}, ${n.name.common} - ${n.population}`)
+              .slice(0,10)
+            //   .join("\n")
+             .map((n)=> document.querySelector('ul').innerHTML += `<li> ${n.name.common} </li>`)
+
+          );
+        });
+    </script>
+  </body>
+</html
